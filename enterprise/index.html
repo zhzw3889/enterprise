@@ -5,6 +5,14 @@
     <title>enterprise</title>
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <script src="js/setHomeSetFav.js" type="txt/javascript"></script>
+    <!--以下三行为设置焦点图的myFocus库文件-->
+    <script src="js/myfocus-2.0.4.min.js" type="text/javascript"></script>
+    <script src="js/mf-pattern/mF_dleung.js"></script>
+    <link rel="stylesheet" href="js/mf-pattern/mF_dleung.css" type="text/css" />
+    <!--以下三行代码为调用myFocus库中的方法使其作用-->
+    <script type="text/javascript">
+        myFocus.set({id:'picBox'});
+    </script>
 </head>
 <body>
 <div class="top"><!--主页头部-->
@@ -25,7 +33,7 @@
             <img src="images/tel.jpg" alt="服务热线" />24小时服务热线：<span class="tel">123-456-7890</span>
         </div><!--span标签是为了对电话号码添加样式-->
     </div><!--logo area finished-->
-    <div class="nav">
+    <div class="nav"><!--导航区-->
         <div class="nav_left"></div>
         <div class="nav_mid">
             <div class="nav_mid_left">
@@ -45,6 +53,21 @@
             </div>
         </div>
         <div class="nav_right"></div>
+    </div><!--nav区结束-->
+    <div class="ad" id="picBox"><!--焦点图区-->
+        <div class="loading"><img src="images/loading.gif" alt="图片加载中" /></div>
+        <div class="pic">
+            <ul>
+                <li><img src="images/ad2.jpg" /></li>
+                <li><img src="images/ad3.jpg" /></li>
+                <li><img src="images/ad4.jpg" /></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main"><!--信息展示区-->
+        <div class="news">新闻</div>
+        <div class="course">课程</div>
+        <div class="sidebar">花絮</div>
     </div>
 </div><!--wrap finished-->
 </body>

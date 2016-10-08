@@ -148,3 +148,39 @@ body {
     padding-right: 25px;/*右填充，是文字不被背景图遮挡*/
     border: 1px solid white;/*边框线为1px宽白色实线*/
 }
+/*焦点图*/
+.pic li {
+    height: 310px;
+}
+.ad {
+    height: 310px;/*根据图像的高度设置*/
+    /*overflow: hidden;!*溢出div即隐藏*!*/
+    /*加overflow就会出现只显示左侧一小部分的情况*/
+}
+/*信息展示区*/
+.main {
+    height: 250px;
+    background-color: white;
+    margin-top: 5px;
+}
+.news {
+    width: 340px;
+    border: 1px solid grey;
+    background-color: darkcyan;
+}
+.course {
+    width: 410px;
+    border: 1px solid grey;
+    background-color: yellowgreen;
+    margin: 0 7px;/*上下为0,左右为7*/
+}
+.sidebar {
+    width: 230px;
+    background-color: cornflowerblue;
+}
+.news,.course,.sidebar {
+    height: 250px;
+    float: left;
+    font-size: large;
+    font-family: 华文楷体;
+}
