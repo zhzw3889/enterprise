@@ -38,3 +38,36 @@ body {
     color: red;
     text-decoration: none;
 }
+/*大盒子格式*/
+.wrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+/*logo区整体高度*/
+.logo {
+    height: 90px;
+    background-color: white;/*后加，使左右区的底色一致*/
+}
+.logo_left {
+    width: 200px;
+    float: left;
+}
+.logo_right {
+    width: 300px;
+    float: right;
+    height: 28px;/*以下两行使右区上下居中*/
+    margin-top: 30px;
+    color: #8E8E8E;/*使其与前面的图标颜色一致*/
+}
+/*右区电话小图标*/
+.logo_right img {
+    vertical-align: middle;/*使其与文字中间对齐*/
+    margin-right: 10px;/*使其与右侧的文字间距10px*/
+}
+/*电话号码*/
+.tel {
+    font-family: 华文楷体;
+    font-size: 16px;
+    color: red;
+
+}
