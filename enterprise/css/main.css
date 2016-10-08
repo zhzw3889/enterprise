@@ -134,7 +134,7 @@ body {
 .nav_mid_left a:hover, .nav_mid_left a:active {
     text-decoration: none;/*去掉下划线*/
     color: yellow;/*文字为黄色*/
-    font-size: 20px;/*文字变大为20px，这样比较有趣*/
+    font-size: 16px;/*文字变大为20px，这样比较有趣*/
     font-family: 华文楷体;/*字体*/
 }
 /*搜索框*/
@@ -166,7 +166,6 @@ body {
 .news {
     width: 340px;
     border: 1px solid grey;
-    background-color: darkcyan;
 }
 .course {
     width: 410px;
@@ -181,6 +180,68 @@ body {
 .news,.course,.sidebar {
     height: 250px;
     float: left;
-    font-size: large;
+}
+/*新闻中心*/
+.title {
+    height: 35px;
+    border-bottom: 2px solid grey;/*下边框*/
+}
+.title_left {
+    width: 70%;
     font-family: 华文楷体;
+    font-size: 14px;
+    font-weight: bold;
+    color: grey;
+    float: left;
+    /*垂直居中，注意是line-height而非height*/
+    line-height: 35px;
+    padding-left: 20px;
+}/*"新闻中心"结束*/
+.title_right {
+    width: 20%;
+    float: right;
+    line-height: 35px;
+}
+.title_right a {
+    text-decoration: none;
+    color: grey;
+}/*More结束*/
+.pic_news {
+    height: 80px;
+    margin-top: 10px;
+    line-height: 22px;/*文字行高*/
+}
+.pic_news img {
+    float: left;/*使图片文字在同一行*/
+    margin: 0 5px;/*上下0,左右5*/
+}
+/*所有的超链接都用同种格式*/
+.pic_news a {
+    color: red;
+    text-decoration: none;
+}
+.news_list {
+    margin-top: 25px;
+}
+.news_list li {
+    list-style-type: none;
+    /*以背景图的形式表示列表前的小图标，防止超出盒子范围*/
+    background: url("../images/list.jpg") no-repeat;
+    padding-left: 10px;
+    margin: 8px;/*上下左右都为8px*/
+    border-bottom: 1px dotted grey;/*下边界为点线*/
+}
+/*列表中超链接的状态*/
+.news_list a:link, .news_list a:visited {
+    text-decoration: none;
+    color: black;
+}
+.news_list a:hover, .news_list a:active {
+    text-decoration: none;
+    color: red;
+}
+/*新闻列表后的日期设置*/
+.news_list span {
+    color: grey;
+    float: right;
 }
