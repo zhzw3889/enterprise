@@ -170,7 +170,6 @@ body {
 .course {
     width: 410px;
     border: 1px solid grey;
-    background-color: yellowgreen;
     margin: 0 7px;/*上下为0,左右为7*/
 }
 .sidebar {
@@ -201,6 +200,8 @@ body {
     width: 20%;
     float: right;
     line-height: 35px;
+    text-align: right;/*右对齐*/
+    padding-right: 10px;
 }
 .title_right a {
     text-decoration: none;
@@ -211,12 +212,12 @@ body {
     margin-top: 10px;
     line-height: 22px;/*文字行高*/
 }
-.pic_news img {
+.pic_news img, .course_pic img {
     float: left;/*使图片文字在同一行*/
     margin: 0 5px;/*上下0,左右5*/
 }
 /*所有的超链接都用同种格式*/
-.pic_news a {
+.pic_news a, .course_pic a {
     color: red;
     text-decoration: none;
 }
@@ -244,4 +245,24 @@ body {
 .news_list span {
     color: grey;
     float: right;
+}
+.course_pic {
+    height: 120px;
+    margin-top: 10px;
+    line-height: 22px;
+}
+.course_type {
+    height: 37px;
+    width: 372px;
+    /*设置背景图片，为下滑灰线*/
+    background: url("../images/product_type_bg.jpg") no-repeat;
+    margin: 20px auto;/*上下20,左右自动*/
+}
+.course_type li {
+    list-style-type: none;/*去除列表前的图标*/
+    float: left;/*排列为同一行*/
+    line-height: 37px;/*与盒子高度相同，使垂直居中*/
+    margin: 0 15px;/*上下0,左右15px使之相互隔开*/
+    text-align: center;/*文字水平居中*/
+
 }
