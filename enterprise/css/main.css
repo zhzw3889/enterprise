@@ -69,5 +69,82 @@ body {
     font-family: 华文楷体;
     font-size: 16px;
     color: red;
-
+}
+/*导航部分*/
+.nav {
+    height: 40px;
+}
+/*导航部分最左侧的空档*/
+.nav_left {
+    width: 10px;
+    background:url(../images/nav_left.jpg) no-repeat;/*与以下两句等效*/
+    /*
+     *background-image:url(../images/nav_left.jpg);
+     *background-repeat: no-repeat;
+     */
+    float: left;
+    height: 40px;/*由于本部分无内容，不加的话就不会将nav撑开，即不显示*/
+}
+/*导航区的中间文字部分*/
+.nav_mid {
+    width: 980px;
+    background: url("../images/nav_bg.jpg") repeat-x;
+    float: left;
+}
+/*导航部分最右侧的空档*/
+.nav_right {
+    width: 10px;
+    background: url("../images/nav_right.jpg") no-repeat;
+    float: left;
+    height: 40px;/*作用同nav_left部分，即使圆角框显示出来*/
+}
+/*重复部分可用下面的代码代替*/
+/* .nav_left,.nav_mid,.nav_right {
+ *    float: left;
+ *    height: 40px;
+ * }
+ */
+/*把导航菜单及搜索框放到同一行中，注意像素宽度的计算*/
+.nav_mid_left, .nav_mid_right {
+    float: left;
+}
+.nav_mid_left {
+    width: 680px;
+}
+.nav_mid_right {
+    width: 300px;
+}
+/*把导航列表项放到同一行中*/
+.nav_mid_left li {
+    float: left;
+    list-style-type: none;/*清除列表前的小圆点*/
+    width: 100px;
+    text-align: center;/*水平居中*/
+    /*在垂直居中之前下方会出出现白色区块，将背景图片挖掉，垂直居中后就恢复正常了，不知为何！！*/
+    line-height: 40px;/*垂直居中，高度设置与盒子高度相同，这种方法记住*/
+}
+/*设置链接初始状态（link）与访问后（visited）的状态*/
+.nav_mid_left a:link, .nav_mid_left a:visited {
+    text-decoration: none;/*去掉下划线*/
+    color: white;/*文字为白色*/
+    font-size: 16px;/*文字变大为16px*/
+    font-family: 华文楷体;/*字体*/
+}
+/*设置链接鼠标经过状态（hover）与点击（active）的状态*/
+.nav_mid_left a:hover, .nav_mid_left a:active {
+    text-decoration: none;/*去掉下划线*/
+    color: yellow;/*文字为黄色*/
+    font-size: 20px;/*文字变大为20px，这样比较有趣*/
+    font-family: 华文楷体;/*字体*/
+}
+/*搜索框*/
+.search_text {
+    width: 190px;
+    height: 25px;
+    margin-top: 5px;
+    /*放大镜背景，水平靠右，垂直居中*/
+    background: url("../images/search.jpg") no-repeat right center;
+    background-color: white;/*与放大镜的颜色统一*/
+    padding-right: 25px;/*右填充，是文字不被背景图遮挡*/
+    border: 1px solid white;/*边框线为1px宽白色实线*/
 }
