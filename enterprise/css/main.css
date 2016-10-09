@@ -324,8 +324,7 @@ body {
 .news_type {
     width: 220px;
     height: 350px;
-    border: 1px solid grey;
-    background-color: lightseagreen;
+    border: 1px solid lightgrey;
     float: left;
 }
 /*右展示区*/
@@ -335,4 +334,40 @@ body {
     border: 1px solid grey;
     background-color: pink;
     float: right;
+}
+/*“新闻中心四字”*/
+.news_type h2 {
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    font-family: 华文楷体;
+    color: grey;
+    background: url("../images/titile_bg.gif") repeat-x;
+    padding-left: 20px;
+}
+/*左侧列表区*/
+.news_type_content {
+    height: 365px;
+    background: url("../images/content_bg.gif") repeat-x;
+}
+/*各列表属性*/
+.news_type_content li {
+    list-style-type: none;
+    height: 30px;
+    line-height: 30px;
+}
+/*列表的超链接属性*/
+.news_type_content li a {
+    color: grey;
+    text-decoration: none;
+    background: url("../images/li_bg.gif") no-repeat left center;
+    padding-left: 15px;/*背景图与文字间隔开*/
+    /*将内联元素改为块状元素，设置文字链接旋停背景色时，使整个背景都改变，而非只是文字的背景*/
+    display: block;
+}
+/*鼠标旋停时的属性*/
+.news_type_content li a:hover {
+    color: blue;
+    background: url("../images/li_bg2.gif") no-repeat left center;
+    background-color: white;
 }
