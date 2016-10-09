@@ -287,6 +287,7 @@ body {
     height: 200px;
     background-color: #E8E8E8;
     margin-top: 10px;
+    clear: both;/*防止新闻中心内容展示区右侧，将其挤掉*/
 }
 .copyright_content {
     width: 1000px;
@@ -312,4 +313,26 @@ body {
 /*使二级列表的文字变小,覆盖前面的设置*/
 .copyright_content li ul li a {
     font-size: 14px;
+}
+/*新闻列表页内容展示区*/
+.list_main {
+    min-height: 350px;/*防止右展示区被拉高时超过其范围*/
+    background-color: white;
+    margin-top: 10px;
+}
+/*左展示区*/
+.news_type {
+    width: 220px;
+    height: 350px;
+    border: 1px solid grey;
+    background-color: lightseagreen;
+    float: left;
+}
+/*右展示区*/
+.list_box {
+    width: 770px;
+    min-height: 350px;
+    border: 1px solid grey;
+    background-color: pink;
+    float: right;
 }
