@@ -331,7 +331,7 @@ body {
 .list_box {
     width: 770px;
     min-height: 350px;
-    border: 1px solid grey;
+    border: 1px solid lightgrey;
     float: right;
 }
 /*“新闻中心四字”*/
@@ -379,4 +379,25 @@ body {
     line-height: 35px;
     background: url("../images/type_bg.png") repeat-x;
     padding-left: 20px;
+}
+/*页码区*/
+.page {
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;/*垂直居中*/
+}
+/*页码内数字链接属性*/
+.page a {
+    display: inline-block;/*兼顾内联及块状，增加不同模式的兼容性*/
+    border: 1px solid lightgrey;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px 10px;
+}
+.page a:link, .page a:visited {
+    color: black;
+}
+.page a:hover, .page a:active {
+    color: white;
+    background-color: red;
 }
