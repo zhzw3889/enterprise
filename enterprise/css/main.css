@@ -332,7 +332,6 @@ body {
     width: 770px;
     min-height: 350px;
     border: 1px solid grey;
-    background-color: pink;
     float: right;
 }
 /*“新闻中心四字”*/
@@ -370,4 +369,14 @@ body {
     color: blue;
     background: url("../images/li_bg2.gif") no-repeat left center;
     background-color: white;
+}
+/*右区新闻列表标题*/
+.list_box h2 {
+    font-size: 14px;
+    font-family: 华文楷体;
+    color: grey;
+    height: 35px;
+    line-height: 35px;
+    background: url("../images/type_bg.png") repeat-x;
+    padding-left: 20px;
 }
