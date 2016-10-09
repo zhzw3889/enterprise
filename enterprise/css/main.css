@@ -333,6 +333,7 @@ body {
     min-height: 350px;
     border: 1px solid lightgrey;
     float: right;
+    background-color: white;/*是新闻详细页的背景统一*/
 }
 /*“新闻中心四字”*/
 .news_type h2 {
@@ -400,4 +401,28 @@ body {
 .page a:hover, .page a:active {
     color: white;
     background-color: red;
+}
+/*新闻详细页*/
+/*标题*/
+.list_box h1 {
+    font-family: 华文楷体;
+    font-size: 20px;
+    text-align: center;/*水平居中*/
+    margin: 10px 0;/*上下10px，左右0*/
+}
+/*发布信息*/
+.list_box_newsInfo {
+    color: grey;
+    text-align: center;
+    border-bottom: 1px dotted grey;/*下边线,p也是块状元素*/
+}
+/*正文*/
+.list_box_newsContent {
+    /*font-size: 14px;*//*老师这里设置是错误的*/
+    padding: 20px;
+    line-height: 25px;
+    text-indent: 2em;/*段落首行缩进*/
+}
+.list_box_newsContent p {
+    font-size: 16px;
 }
