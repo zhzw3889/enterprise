@@ -174,7 +174,6 @@ body {
 }
 .sidebar {
     width: 230px;
-    background-color: cornflowerblue;
 }
 .news,.course,.sidebar {
     height: 250px;
@@ -265,4 +264,20 @@ body {
     margin: 0 15px;/*上下0,左右15px使之相互隔开*/
     text-align: center;/*文字水平居中*/
 
+}
+/*视频区*/
+.video {
+    height: 185px;
+    border: 1px solid grey;
+}
+.video_content {
+    height: 150px;
+    /*下面两行代码是我另加的，是视频内容区布局更美观*/
+    margin-left: 4px;
+    margin-top: 4px;
+}
+.sidebar_ad {
+    height: 55px;
+    border: 1px solid grey;
+    margin-top: 7px;
 }
